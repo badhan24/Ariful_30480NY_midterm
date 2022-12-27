@@ -19,6 +19,18 @@ public class DetermineLargestWord {
         Map<Integer, String> map = new HashMap<Integer, String>();
         String st = "";
         //implement
+        String[] split = wordGiven.split(" ");
+        String lrgWord = split[0];
+        int lrgLength = lrgWord.length();
+        for (String word: split) {
+            if (lrgLength< word.length()){
+                lrgLength = word.length();
+                lrgWord = word;
+            }
+        }
+
+        map.put(lrgLength,lrgWord);
+        System.out.println(map);
 
         return map;
     }

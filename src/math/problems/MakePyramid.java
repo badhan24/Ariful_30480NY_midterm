@@ -1,14 +1,8 @@
 package math.problems;
 
-import static jdk.nashorn.internal.objects.Global.print;
-
 public class MakePyramid {
-
-    static int i;
-    static int j;
-    static int k;
-    static int number;
     public static void main(String[] args) {
+
         /*   Implement a large Pyramid of stars in the screen with java.
          *
          * *
@@ -19,20 +13,19 @@ public class MakePyramid {
          */
 
 
+        int rows = 6;
 
+        for (int i = 0; i < rows; i++) {
 
-        for(i=1; i<=number; i++)
-        {
-            for(j=i; j<number;j++)
-                System.out.print("I");
-            for(k=1; k<(i*2); k++)
+            for (int j = 0; j < rows - i - 1; j++) {
+                System.out.print(" ");
+            }
+            for (int j = 0; j < 2 * i + 1; j++) {
                 System.out.print("*");
-            System.out.print("\n");
-
+            }
+            System.out.println();
         }
+    }
+}
 
 
-
-        }
-
-  }
