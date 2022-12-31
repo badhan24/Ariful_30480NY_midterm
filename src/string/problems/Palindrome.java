@@ -8,4 +8,9 @@ public class Palindrome {
          */
 
     }
+
+    public static boolean palindromeTest(String s) {
+        return false;
+    }
+
 }

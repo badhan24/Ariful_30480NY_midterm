@@ -1,5 +1,7 @@
 package string.problems;
 
+import java.util.ArrayList;
+
 public class DuplicateWord {
 
     private static String string;
@@ -21,10 +23,10 @@ public class DuplicateWord {
         int count;
 
         System.out.println("Duplicate words in a given string : ");
-        for(int i = 0; i < words.length; i++) {
+        for (int i = 0; i < words.length; i++) {
             count = 1;
-            for(int j = i+1; j < words.length; j++) {
-                if(words[i].equals(words[j])) {
+            for (int j = i + 1; j < words.length; j++) {
+                if (words[i].equals(words[j])) {
                     count++;
                     //Set words[j] to 0 to avoid printing visited word
                     words[j] = "0";
@@ -32,9 +34,13 @@ public class DuplicateWord {
             }
 
             //Displays the duplicate word if count is greater than 1
-            if(count > 1 && words[i] != "0")
+            if (count > 1 && words[i] != "0")
                 System.out.println(words[i]);
         }
+    }
+
+    public static ArrayList<String> duplicatedWord(String st) {
+        return null;
     }
 
 }
