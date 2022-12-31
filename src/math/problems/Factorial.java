@@ -36,4 +36,11 @@ public class Factorial {
             return (num * factor(num - 1));
     }
 
+    public static int factorialIteration(int i) {
+        return 0;
+    }
+
+    public static int factorialRecursion(int i) {
+        return 0;
+    }
 }

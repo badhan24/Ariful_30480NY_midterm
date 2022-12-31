@@ -20,5 +20,8 @@ public class Fibonacci {
 
     }
 
+    public static long fib(int i) {
+        return 0;
     }
+}
 
